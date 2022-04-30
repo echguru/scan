@@ -306,7 +306,7 @@ async function fbasics()
 	$("gt0a").innerHTML="<b>"+(gpa).toFixed(1)+"</b> GWei";
 	$("gt0b").innerHTML="<b>"+(gpb).toFixed(1)+"</b> Gwei";
 	$("gt0c").innerHTML="<b>"+(gpc).toFixed(1)+"</b> Gwei";
-	$("tbar").innerHTML=gpa.toFixed()+" "+gpc.toFixed()+" GWei - ECH.guru";"ECHScan:"+
+	$("tbar").innerHTML=gpa.toFixed()+" "+gpc.toFixed()+" GWei - ECH.guru"
 
 	$("gt1a").innerHTML = (gpa*21000/1e9).toFixed(6);
 	$("gt1b").innerHTML = (gpb*21000/1e9).toFixed(6);
@@ -534,7 +534,7 @@ async function fca(t,o,sp)
 }
 function fbf(h)
 {
-	web3.eth.getBalance(h).then(r=>$("sbf").innerHTML=(Number(r)/1e18).toFixed(18)+" MTV")
+	web3.eth.getBalance(h).then(r=>$("sbf").innerHTML=(Number(r)/1e18).toFixed(18)+" ECH")
 }
 async function fts(t)
 {
@@ -542,7 +542,7 @@ async function fts(t)
 }
 function fhb(h,b)
 {
-	web3.eth.getBalance(h,b).then(r=>$("shb").innerHTML=(Number(r)/1e18).toFixed(18)+" MTV")
+	web3.eth.getBalance(h,b).then(r=>$("shb").innerHTML=(Number(r)/1e18).toFixed(18)+" ECH")
 }
 async function fht(t,h,n)
 {
