@@ -228,7 +228,7 @@ table{width:max-content}
 		<input id="ihtt" placeholder="Token's Address"><br>
 		<input id="ihto" placeholder="Holder's Address"><br>
 		<input id="ihtb" placeholder="Block Height"><br>
-		<button onclick="fht(ihtt.value,ihto.value,ihthb.value)"> ▶</button>
+		<button onclick="fht(ihtt.value,ihto.value,ihtb.value)"> ▶</button>
 		<br><br>
 		<span id="sht"></span>
 	</div>
@@ -521,7 +521,7 @@ async function fbt(t,h)
 	await C.methods.decimals().call((e,r)=>{d=r});
 	await C.methods.symbol().call((e,r)=>{s=r});
 	await C.methods.balanceOf(h).call((e,r)=>{b=r})
-	$("sbt").innerHTML=(Number(b)/10**Number(d)).toFixed(d)+" "+s;
+	$("sht").innerHTML=(Number(b)/10**Number(d)).toFixed(d)+" "+s;
 }
 async function fca(t,o,sp)
 {
